@@ -1,6 +1,155 @@
 package com.bluemapleit.frydata.meta;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Component;
+
+@Component
 public class MetaData {
 
-	public static final String FILE_NAME="file_name";
+	public static final String FILE_NAME = "file_name";
+	public static final String NA = "NA";
+	public static final String FRY_DATA_SHEET="FRY Y-15 Data";
+
+	Map<String, String> dataColumnMap = new LinkedHashMap<String, String>();;
+
+	public MetaData() {
+		dataColumnMap.put("NAME", "F[0].P1[0].NM_LGL[0]");
+		dataColumnMap.put("DT", "");
+		dataColumnMap.put("ID_RSSD", "F[0].P1[0].NICHiddenFields[0].ID_RSSD[0]");
+		dataColumnMap.put("RISK2170", NA);
+		dataColumnMap.put("RISKB989", NA);
+		dataColumnMap.put("RISKM334", "F[0].P2[0].#subform[7].RISKM334[0]");
+		dataColumnMap.put("RISKM335", "F[0].P2[0].#subform[4].RISKM335[0]");
+		dataColumnMap.put("RISKM336", "F[0].P2[0].#subform[4].RISKM336[0]");
+		dataColumnMap.put("RISKM337", "F[0].P2[0].#subform[1].RISKM337[0]");
+		dataColumnMap.put("RISKM338", NA);
+		dataColumnMap.put("RISKM339", "F[0].P2[0].#subform[1].RISKM339[0]");
+		dataColumnMap.put("RISKM340", "F[0].P2[0].#subform[1].RISKM340[0]");
+		dataColumnMap.put("RISKM341", "F[0].P2[0].#subform[4].RISKM341[0]");
+		dataColumnMap.put("RISKM342", "F[0].P2[0].#subform[7].RISKM342[0]");
+		dataColumnMap.put("RISKM343", NA);
+		dataColumnMap.put("RISKM344", NA);
+		dataColumnMap.put("RISKM718", "F[0].P2[0].#subform[7].RISKM718[0]");
+		dataColumnMap.put("RISKM346", "F[0].P2[0].#subform[7].RISKM346[0]");
+		dataColumnMap.put("RISKM347", "F[0].P2[0].#subform[7].RISKM347[0]");
+		dataColumnMap.put("RISKM348", NA);
+		dataColumnMap.put("RISKM349", "F[0].P2[0].#subform[7].RISKM349[0]");
+		dataColumnMap.put("RISKM350", NA);
+		dataColumnMap.put("RISKM351", "F[0].P2[0].#subform[5].RISKM351[0]");
+		dataColumnMap.put("RISKJ458", "F[0].P2[0].#subform[5].RISKJ458[0]");
+		dataColumnMap.put("RISKM352", "F[0].P2[0].#subform[5].RISKM352[0]");
+		dataColumnMap.put("RISKM353", "F[0].P2[0].#subform[5].RISKM353[0]");
+		dataColumnMap.put("RISKM354", "F[0].P2[0].#subform[5].RISKM354[0]");
+		dataColumnMap.put("RISKM345", "F[0].P2[0].#subform[5].RISKM345[0]");
+		dataColumnMap.put("RISKM355", "F[0].P2[0].#subform[5].RISKM355[0]");
+		dataColumnMap.put("RISKM356", "F[0].P2[0].#subform[5].RISKM356[0]");
+		dataColumnMap.put("RISKM357", "F[0].P2[0].#subform[5].RISKM357[0]");
+		dataColumnMap.put("RISKM358", "F[0].P2[0].#subform[5].#subform[6].RISKM358[0]");
+		dataColumnMap.put("RISKM359", "F[0].P3[0].#subform[1].RISKM359[0]");
+		dataColumnMap.put("RISKM360", "F[0].P3[0].#subform[1].RISKM360[0]");
+		dataColumnMap.put("RISKM361", NA);
+		dataColumnMap.put("RISKM362", "F[0].P3[0].#subform[1].RISKM362[0]");
+		dataColumnMap.put("RISKM363", "F[0].P3[0].#subform[1].RISKM363[0]");
+		dataColumnMap.put("RISKM364", "F[0].P3[0].#subform[1].RISKM364[0]");
+		dataColumnMap.put("RISKM365", "F[0].P3[0].#subform[1].RISKM365[0]");
+		dataColumnMap.put("RISKM366", "F[0].P3[0].#subform[1].RISKM366[0]");
+		dataColumnMap.put("RISKM367", "F[0].P3[0].#subform[1].RISKM367[0]");
+		dataColumnMap.put("RISKM368", "F[0].P3[0].#subform[1].RISKM368[0]");
+		dataColumnMap.put("RISKM369", NA);
+		dataColumnMap.put("RISKM370", "F[0].P3[0].#subform[1].RISKM370[0]");
+		dataColumnMap.put("RISKM371", "F[0].P3[0].#subform[1].RISKM371[0]");
+		dataColumnMap.put("RISKM372", "F[0].P3[0].#subform[1].RISKM372[0]");
+		dataColumnMap.put("RISKM373", "F[0].P3[0].#subform[1].RISKM373[0]");
+		dataColumnMap.put("RISK2309", "F[0].P3[0].#subform[1].RISK2309[0]");
+		dataColumnMap.put("RISKM374", "F[0].P3[0].#subform[1].RISKM374[0]");
+		dataColumnMap.put("RISKM375", "F[0].P3[0].#subform[1].RISKM375[0]");
+		dataColumnMap.put("RISKM376", "F[0].P3[0].#subform[1].RISKM376[0]");
+		dataColumnMap.put("RISKM377", "F[0].P3[0].RISKM377[0]");
+		dataColumnMap.put("RISKM378", "F[0].P3[0].RISKM378[0]");
+		dataColumnMap.put("RISKM379", "F[0].P3[0].RISKM379[0]");
+		dataColumnMap.put("RISKM380", "F[0].P3[0].RISKM380[0]");
+		dataColumnMap.put("RISKM381", "F[0].P3[0].RISKM381[0]");
+		dataColumnMap.put("RISKM382", "F[0].P3[0].RISKM382[0]");
+		dataColumnMap.put("RISKM383", "F[0].P3[0].RISKM383[0]");
+		dataColumnMap.put("RISKM384", "F[0].P3[0].RISKM384[0]");
+		dataColumnMap.put("RISKM385", "F[0].P3[0].RISKM385[0]");
+		dataColumnMap.put("RISKM386", "F[0].P3[0].RISKM386[0]");
+		dataColumnMap.put("RISKM387", "F[0].P3[0].RISKM387[0]");
+		dataColumnMap.put("RISKM388", "F[0].P3[0].RISKM388[0]");
+		dataColumnMap.put("RISKM389", "F[0].P4[0].#subform[0].RISKM389[0]");
+		dataColumnMap.put("RISKM390", "F[0].P3[0].RISKM390[0]");
+		dataColumnMap.put("RISKM405", "F[0].P3[0].RISKM405[0]");
+		dataColumnMap.put("RISKM406", "F[0].P4[0].#subform[3].RISKM406[0]");
+		dataColumnMap.put("RISKM407", "F[0].P4[0].#subform[3].RISKM407[0]");
+		dataColumnMap.put("RISKM408", "F[0].P4[0].#subform[3].RISKM408[0]");
+		dataColumnMap.put("RISKM409", "F[0].P4[0].#area[1].RISKM409[0]");
+		dataColumnMap.put("RISKM410", "F[0].P3[0].#subform[1].RISKM367[0]");
+		dataColumnMap.put("RISKM411", "F[0].P4[0].#area[1].RISKM411[0]");
+		dataColumnMap.put("RISKM412", "F[0].P4[0].RISKM412[0]");
+		dataColumnMap.put("RISKM413", NA);
+		dataColumnMap.put("RISK1773", "F[0].P4[0].RISK1773[0]");
+		dataColumnMap.put("RISKM414", "F[0].P4[0].RISKM414[0]");
+		dataColumnMap.put("RISKM415", NA);
+		dataColumnMap.put("RISKM416", NA);
+		dataColumnMap.put("RISKM417", NA);
+		dataColumnMap.put("RISKM418", NA);
+		dataColumnMap.put("RISKM419", NA);
+		dataColumnMap.put("RISKM420", NA);
+		dataColumnMap.put("RISKM421", NA);
+		dataColumnMap.put("RISK1754", "F[0].P4[0].#subform[1].RISK1754[0]");
+		dataColumnMap.put("RISKG506", "F[0].P4[0].RISKG506[0]");
+		dataColumnMap.put("RISKM422", "F[0].P4[0].#area[0].RISKM422[0]");
+		dataColumnMap.put("RISKM423", "F[0].P4[0].#area[0].RISKM423[0]");
+		dataColumnMap.put("RISKM424", "F[0].P4[0].#area[0].RISKM424[0]");
+		dataColumnMap.put("RISKM425", "F[0].P4[0].#area[0].RISKM425[0]");
+		dataColumnMap.put("RISKM426", "F[0].P4[0].#area[0].RISKM426[0]");
+		dataColumnMap.put("RISK2948", "F[0].P5[0].#subform[0].RISK2948[0]");
+		dataColumnMap.put("RISKM427", "F[0].P5[0].#subform[0].RISKM427[0]");
+		dataColumnMap.put("RISKM428", "F[0].P5[0].#subform[0].RISKM428[0]");
+		dataColumnMap.put("RISKM429", "F[0].P5[0].#subform[0].RISKM429[0]");
+		dataColumnMap.put("RISKM430", "F[0].P5[0].#subform[0].RISKM430[0]");
+		dataColumnMap.put("RISKM431", NA);
+		dataColumnMap.put("RISKM432", "F[0].P5[0].#subform[0].#subform[1].RISKM432[0]");
+		dataColumnMap.put("RISKM433", "F[0].P5[0].#subform[0].RISKM433[0]");
+		dataColumnMap.put("RISKM434", "F[0].P5[0].#subform[0].RISKM434[0]");
+		dataColumnMap.put("RISKM435", "F[0].P5[0].#subform[0].RISKM435[0]");
+		dataColumnMap.put("RISKM436", "F[0].P4[0].#subform[0].RISKM436[0]");
+		dataColumnMap.put("RISKM437", "F[0].P5[0].#subform[0].RISKM437[0]");
+		dataColumnMap.put("RISKC490", "F[0].P1[0].RISKC490[0]");
+		dataColumnMap.put("RISKJ196", "F[0].P1[0].RISKJ196[0]");
+		dataColumnMap.put("RISK8901", "F[0].P1[0].RISK8901[0]");
+		dataColumnMap.put("RISK8902", "F[0].P1[0].RISK8902[0]");
+		dataColumnMap.put("RISK9116", "F[0].P1[0].RISK9116[0]");
+		dataColumnMap.put("RISK4086", "F[0].P1[0].RISK4086[0]");
+		dataColumnMap.put("RISKN506", NA);
+		dataColumnMap.put("RISKN507", "F[0].P2[0].#subform[7].RISKN507[0]");
+		dataColumnMap.put("RISKN508", NA);
+		dataColumnMap.put("RISKN509", "F[0].P3[0].#subform[1].RISKN509[0]");
+		dataColumnMap.put("RISKN510", "F[0].P4[0].RISKN510[0]");
+		dataColumnMap.put("RISKN511", "F[0].P4[0].RISKN511[0]");
+		dataColumnMap.put("RISKN255", "F[0].P4[0].RISKN255[0]");
+		dataColumnMap.put("RISKY822", "F[0].P2[0].#subform[1].RISKY822[0]");
+		dataColumnMap.put("RISKY823", "F[0].P2[0].#subform[1].RISKY823[0]");
+		dataColumnMap.put("RISKY824", "F[0].P2[0].#subform[1].RISKY824[0]");
+		dataColumnMap.put("RISKY825", "F[0].P2[0].#subform[1].RISKY825[0]");
+		dataColumnMap.put("RISKY826", "F[0].P2[0].#subform[2].#subform[3].RISKY826[0]");
+		dataColumnMap.put("RISKY827", "F[0].P2[0].#subform[7].RISKY827[0]");
+		dataColumnMap.put("RISKY828", "F[0].P2[0].#subform[7].RISKY828[0]");
+		dataColumnMap.put("RISKY829", "F[0].P2[0].#subform[7].RISKY829[0]");
+		dataColumnMap.put("RISKY830", "F[0].P2[0].#subform[7].RISKY830[0]");
+		dataColumnMap.put("RISKY831", "F[0].P2[0].#subform[8].#subform[9].RISKY831[0]");
+		dataColumnMap.put("RISKY832", "F[0].P2[0].#subform[8].RISKY832[0]");
+		dataColumnMap.put("RISKY833", "F[0].P3[0].#subform[1].RISKY833[0]");
+		dataColumnMap.put("RISKY834", "F[0].P3[0].#subform[0].RISKY834[0]");
+		dataColumnMap.put("RISKY835", "F[0].P4[0].#subform[0].RISKY835[0]");
+		dataColumnMap.put("RISKY836", "F[0].P4[0].#subform[0].RISKY836[0]");
+		dataColumnMap.put("RISKY837", "F[0].P4[0].#subform[0].RISKY837[0]");
+		dataColumnMap.put("RISKFC52", "F[0].P2[0].RISKFC52[0]");
+	}
+
+	public Map<String, String> getDataColumnMap() {
+		return dataColumnMap;
+	}
 }

@@ -13,9 +13,11 @@ import org.apache.pdfbox.pdmodel.encryption.InvalidPasswordException;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
 import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 import org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField;
+import org.springframework.stereotype.Component;
 
 import com.bluemapleit.frydata.meta.MetaData;
 
+@Component
 public class DataExtractorService {
 
 	/**
